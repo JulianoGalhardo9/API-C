@@ -20,9 +20,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Controllers\" />
+    <None Remove="Communication\" />
+    <None Remove="Communication\Request\" />
+    <None Remove="Communication\Responses\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Communication\" />
+    <Folder Include="Communication\Request\" />
+    <Folder Include="Communication\Responses\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="appsettings %28copiar%29.Development.json" />
