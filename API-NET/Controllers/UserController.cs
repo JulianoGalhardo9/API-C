@@ -9,7 +9,7 @@ namespace API_NET.Controllers
         [HttpGet]
         [ProducesResponseType(typeof(User), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
-        public IActionResult Get(int id)
+        public IActionResult Get([FromHeader]int id, [FromHeader] string? nickname)
         {
             var response = new User
             {
